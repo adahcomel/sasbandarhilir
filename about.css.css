@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cavefat+Brush&family=Lobster+Two:ital@1&family=Niconne&display=swap');
+
+*{
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Niconne', cursive;
+    margin:0; 
+    padding:0;
+    user-select: none;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none; 
+
+  }
+  
+  body{
+    background:url(bg2.jpg) repeat center; 
+    overflow-x: hidden;
+   }
+  
+   .slide a{
+     color: #a381c2;
+     font-size: 30px;
+     font-family: 'Lobster Two', cursive;
+   }
+ 
+  .sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #aa6c39;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  
+   .sidenav a, .acc-btn, .food-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffe240;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Caveat Brush', cursive;
+  }
+  
+  .sidenav  .acc-btn:hover {
+    color: #fff;
+  }
+  
+  
+   .sidenav .food-btn:hover {
+    color: #fff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  .acc-container {
+    display: none;
+    background-color: #835a39;
+    padding-left: 8px;
+  }
+  
+  .food-container {
+    display: none;
+    background-color: #835a39;
+    padding-left: 8px;
+  }
+  
+ 
+  .fa-sort-down{
+    float: right;
+    padding-right: 8px;
+  }
+  
+  
+  #main{
+    transition: margin-left .5s;
+    padding: 16px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+    background: #302e2cb6;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+  }
+
+  #main .sitelogo .img{
+    width: 120px;
+    margin-left: 1235px;
+   padding-top: 0;
+ 
+  }
+  #main .heading{
+    font-size: 100px;
+    margin-bottom: 30px;
+    color:#FFD700;
+    font-family: 'Niconne', cursive;
+    text-align: center;
+  }
+
+  #main h2{
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Caveat Brus', cursive;
+    text-align: center;
+}
+
+#main span{
+  font-size: 19px;
+  margin-bottom: 30px;
+  color: #ffe240;
+  font-family: 'Caveat Brus', cursive;
+  text-align: center;
+}
+
+  .footer{
+    text-align: center;
+    color: #ffc2d1;
+  }
+  
+  
+  @media (max-width:435px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    #main .heading{
+      font-size: 25px;
+    }
+  
+    #main .box-container{
+      grid-template-columns: 1fr;
+    }
+  
+    #main .box-container .box .image{
+      height: 200px;
+    }
+  
+    #main .box-container .box .content h3{
+      font-size: 12px;
+    }
+  
+    #main .box-container .box .content .icons span{
+      font-size: 12px;
+    }
+  
+  }

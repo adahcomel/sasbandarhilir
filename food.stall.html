@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.stall.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Bandar Hilir Community</title>
+     
+</head>
+<body>
+    
+
+    <div id="main">
+      <span class="slide">
+         <a href="#"onclick="openNav()">&#9776; Menu</a></span>
+
+      <div id="mySidenav" class="sidenav">
+         <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="home.html.html">HOME</a>
+         <button class="acc-btn">ACCOMMODATION
+             <i class="fas fa-sort-down"></i>
+         </button>
+         </a>
+          <div class="acc-container">
+             <a href="acc5.html">5 STAR</a>
+             <a href="acc4.html">4 STAR</a>
+          </div>
+         <button class="food-btn">FOOD
+             <i class="fas fa-sort-down"></i>
+         </button>
+         </a>
+         <div class="food-container">
+             <a href="food.restaurant.html">RESTAURANT</a>
+             <a href="food.stall.html">STALL</a>
+         </div>
+         <a href="tourism1 (2).html">TOURISM PLACES</a>
+         <a href="shopping.html">SHOPPING</a>
+         <a href="entertainment.html">ENTERTAINMENT PLACES</a>
+         <a href="historical.html">HISTORICAL PLACES</a>
+         <a href="contact.html.html">CONTACT US</a>
+         <a href="about.html.html">ABOUT US</a>
+      </div>
+
+        <div class="sitelogo">
+            <img src="SAS4.png" alt="logo" class="img">
+         </div>
+
+         <h1 id="anchor1" class="heading">Food</h1>
+         <h2>“Malacca is a food heaven!” is what you’ll most likely hear when you enquire about the small and historical city.
+            Tantalize your taste buds with all these mouthwatering selections of food; spicy, sweet, tangy and sour local specialties all over the streets of Malacca.
+            So here have been attached some popular restaurants and stalls in Melaka that offer interesting food dishes for all the visitors.
+         </h2>
+
+         <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                   <img src="cendol jam besar.jpg.jpg" alt="" class="image">
+                   <div class="overlay">
+                      <div class="text">
+                        Cendol Jam Besar stall is located in Bandar Hilir, 75200 Melaka, facing the The Stadthuys building.
+                         Among the menus that visitors choose are cendol kacang and cendol durian. The stall operates every Thursday to Friday only, starting at 10 a.m. to 7 p.m.
+                      </div>
+                  </div>
+                </div>
+                <div class="content">
+                   <h3>Cendol Jam Besar</h3>
+                   <div class="icons">
+                   </div>
+                </div>
+             </div>
+       
+             <div class="box">
+                <div class="image">
+                   <img src="dutch harbour cafe.jpg.jpg" alt="" class="image">
+                   <div class="overlay">
+                      <div class="text">
+                        Cafe Dutch Harbor is located at Jalan Laksamana, Bandar Hilir, 75100 Melaka.
+                         The cafe offers desserts and western food such as spaghetti, cake and chicken chop.
+                          The cafe operates every day except Wednesdays from 4 a.m to 11.30p.m for Monday to Friday and on weekends from 11 a.m to 11.30p.m.
+                      </div>
+                  </div>
+                </div>
+                <div class="content">
+                   <h3>Dutch Harbour Cafe</h3>
+                   <div class="icons">
+                   </div>
+                </div>
+             </div>
+       
+             <div class="box">
+                <div class="image">
+                   <img src="cendol kg hulu.jpg" alt="" class="image">
+                   <div class="overlay">
+                      <div class="text">
+                        Cendol Kampung Hulu is located at Jalan Kampung Hulu, Kampung Hulu, 75200 Melaka.
+                         The restaurant offers various types and choices of cendol for customers and the most popular is the original shaved ice cendol.
+                          The restaurant operates daily from 11 a.m. to 11 p.m..</div>
+                  </div>
+                </div>
+                <div class="content">
+                   <h3>Cendol Kampung Hulu</h3>
+                   <div class="icons">
+                   </div>
+                </div>
+             </div>
+       
+             <div class="anchor">
+                <p>Go
+                    <a href="#anchor1">
+                      <i class="fas fa-chevron-circle-up"></i>
+                    </a>
+                </p>
+             </div>
+       
+       
+          </div>
+       
+          <div class="footer">
+               &copy;Copyright 2021. Group 7 . Recommended Browser Google Chrome Resolution 750 x 1600. Last updated December 2021. All Rights Reserved.
+           </div>
+       
+       
+       </div>
+    </div>
+
+   <script>
+      var dropdown = document.getElementsByClassName("acc-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+
+      var dropdown = document.getElementsByClassName("food-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+      }
+      }
+
+
+      let loadMoreBtn = document.querySelector('#load-more');
+      let currentItem = 3;
+
+      loadMoreBtn.onclick = () =>{
+      let boxes = [...document.querySelectorAll('#main .box-container .box')];
+      for (var i = currentItem; i < currentItem + 3; i++){
+      boxes[i].style.display = 'inline-block';
+      }
+      currentItem += 3;
+
+      if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+      }
+   }
+
+
+      function openNav(){
+      document.getElementById('mySidenav').style.width = "250px";
+      document.getElementById('main').style.marginLeft = "250px";
+      }
+
+      function closeNav(){
+      document.getElementById('mySidenav').style.width = "0";
+      document.getElementById('main').style.marginLeft= "0";
+      }
+
+
+   </script>     
+
+    
+</body>
+</html>

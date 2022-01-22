@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Bandar Hilir Community</title>
+     
+</head>
+<body>
+    
+
+    <div id="main">
+      <span class="slide">
+         <a href="#"onclick="openNav()">&#9776; Menu</a></span>
+
+      <div id="mySidenav" class="sidenav">
+         <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="home.html.html">HOME</a>
+         <button class="acc-btn">ACCOMMODATION
+             <i class="fas fa-sort-down"></i>
+         </button>
+         </a>
+          <div class="acc-container">
+             <a href="acc5.html">5 STAR</a>
+             <a href="acc4.html">4 STAR</a>
+          </div>
+         <button class="food-btn">FOOD
+             <i class="fas fa-sort-down"></i>
+         </button>
+         </a>
+         <div class="food-container">
+             <a href="food.restaurant.html">RESTAURANT</a>
+             <a href="food.stall.html">STALL</a>
+         </div>
+         <a href="tourism1 (2).html">TOURISM PLACES</a>
+         <a href="shopping.html">SHOPPING</a>
+         <a href="entertainment.html">ENTERTAINMENT PLACES</a>
+         <a href="historical.html">HISTORICAL PLACES</a>
+         <a href="contact.html.html">CONTACT US</a>
+         <a href="about.html.html">ABOUT US</a>
+      </div>
+
+        <div class="sitelogo">
+            <img src="SAS4.png" alt="logo" class="img">
+         </div>
+
+         <h1 id="anchor1" class="heading">Welcome to My Paradise ~ </h1>
+         <h1>Melaka</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+             <div class="video">
+                <div class="overlay">
+                 <p><video width="600" controls>
+                     <source src="vidbandar.Mov.MOV" type="video/MP4">
+                 </video></p>
+                </div>
+             </div>
+             <div class="content">
+                <h3>Bandar Hilir</h3>
+                <div class="icons">
+                </div>
+             </div>
+          </div>
+       
+       
+          </div>
+       
+          <div class="footer">
+               &copy;Copyright 2021. Group 7 . Recommended Browser Google Chrome Resolution 750 x 1600. Last updated December 2021. All Rights Reserved.
+           </div>
+       
+       </div>
+    </div>
+
+   <script>
+      var dropdown = document.getElementsByClassName("acc-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+
+      var dropdown = document.getElementsByClassName("food-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+      }
+      }
+
+
+      let loadMoreBtn = document.querySelector('#load-more');
+      let currentItem = 3;
+
+      loadMoreBtn.onclick = () =>{
+      let boxes = [...document.querySelectorAll('#main .box-container .box')];
+      for (var i = currentItem; i < currentItem + 3; i++){
+      boxes[i].style.display = 'inline-block';
+      }
+      currentItem += 3;
+
+      if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+      }
+   }
+
+
+      function openNav(){
+      document.getElementById('mySidenav').style.width = "250px";
+      document.getElementById('main').style.marginLeft = "250px";
+      }
+
+      function closeNav(){
+      document.getElementById('mySidenav').style.width = "0";
+      document.getElementById('main').style.marginLeft= "0";
+      }
+
+
+   </script>     
+
+    
+</body>
+</html>
